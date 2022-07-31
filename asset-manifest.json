@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tone-Deaf/static/css/main.b3d907f1.css",
+    "main.js": "/Tone-Deaf/static/js/main.9c57a794.js",
+    "static/js/787.41764f5f.chunk.js": "/Tone-Deaf/static/js/787.41764f5f.chunk.js",
+    "index.html": "/Tone-Deaf/index.html",
+    "main.b3d907f1.css.map": "/Tone-Deaf/static/css/main.b3d907f1.css.map",
+    "main.9c57a794.js.map": "/Tone-Deaf/static/js/main.9c57a794.js.map",
+    "787.41764f5f.chunk.js.map": "/Tone-Deaf/static/js/787.41764f5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3d907f1.css",
+    "static/js/main.9c57a794.js"
+  ]
+}
