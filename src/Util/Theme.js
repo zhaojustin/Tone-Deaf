@@ -21,4 +21,11 @@ export const theme = createTheme({
       fontSize: 25,
     },
   },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        underline: "none",
+      },
+    },
+  },
 });

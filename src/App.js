@@ -1,17 +1,21 @@
-import Wrapper from "./Components/Home/Wrapper";
+import Wrapper from "./Components/Wrapper.js";
 
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./Util/Theme";
 import CssBaseline from "@mui/material/CssBaseline";
 
+import { BrowserRouter } from "react-router-dom";
+
 function App() {
   return (
     <div>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
 
-        <Wrapper />
-      </ThemeProvider>
+          <Wrapper />
+        </ThemeProvider>
+      </BrowserRouter>
     </div>
   );
 }
