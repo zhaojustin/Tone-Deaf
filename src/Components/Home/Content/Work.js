@@ -1,10 +1,18 @@
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 
-import ReactPlayer from "react-player";
+import Masonry from "@mui/lab/Masonry";
+
+import Typography from "@mui/material/Typography";
+import AddAPhotoOutlinedIcon from "@mui/icons-material/AddAPhotoOutlined";
+
+import { Link as RouterLink } from "react-router-dom";
+
+import "./Player.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -19,85 +27,156 @@ export default function Work() {
   return (
     <Box id="work">
       <Typography variant="h5">Our Past Work:</Typography>
-      <Box sx={{ mt: 5 }}>
-        <Grid
-          container
-          rowSpacing={{ xs: 1, sm: 2, md: 3 }}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
-          <Grid item xs={12} sm={6}>
-            <Paper sx={{ backgroundColor: "#1A2027", p: 3 }}>
-              <Typography variant="h6">Name 1</Typography>
-              <Typography variant="subtitle1">Name 1</Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper sx={{ backgroundColor: "#1A2027", p: 3 }}>
-              <Box>
-                <Typography variant="h6">Name 2</Typography>
-                <Typography variant="body1" sx={{ pt: 3, pb: 3 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </Typography>
-              </Box>
+      <Box sx={{ mt: 5, ml: { xs: 1.5, sm: 0 } }}>
+        <Masonry columns={{ xs: 1, sm: 2 }} spacing={2}>
+          {/* Sundae School */}
+          <Paper
+            sx={{
+              p: 3,
+              width: "100%",
+              backgroundColor: "#1A2027",
+            }}
+          >
+            <Box className="iframe-container-16_9">
               <iframe
-                width="100%"
-                height="275"
-                src="https://www.youtube-nocookie.com/embed/4Q8Xl8vKl2I"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://player.vimeo.com/video/709360748?h=33cce6fed7"
+                className="responsive-iframe"
                 allowfullscreen
+                frameBorder="0"
               ></iframe>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper sx={{ backgroundColor: "#1A2027", p: 3 }}>
-              <Box>
-                <Typography variant="h6">Name 3</Typography>
-                <Typography variant="body1" sx={{ pt: 3, pb: 3 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </Typography>
-              </Box>
+            </Box>
+            <Box sx={{ pt: 2 }}>
+              <Typography variant="h6">Sundae School</Typography>
+              <Typography variant="subtitle1" color="secondary">
+                "Puff"
+              </Typography>
+            </Box>
+          </Paper>
+          {/* EXPERIENCE TOGETHER */}
+          <Paper
+            sx={{
+              p: 3,
+              width: "100%",
+              backgroundColor: "#1A2027",
+            }}
+          >
+            <Box className="iframe-container-145_1">
               <iframe
-                width="100%"
-                height="275"
-                src="https://www.youtube-nocookie.com/embed/q-74HTjRbuY"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                src="https://player.vimeo.com/video/713481351?h=67e50c5ae5"
+                className="responsive-iframe"
+                frameBorder="0"
               ></iframe>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper sx={{ backgroundColor: "#1A2027", p: 3 }}>
-              <Box>
-                <Typography variant="h6">Name 4</Typography>
-                <Typography variant="body1" sx={{ pt: 3, pb: 3 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </Typography>
-              </Box>
+            </Box>
+            <Box sx={{ pt: 2 }}>
+              <Typography variant="h6">Link</Typography>
+              <Typography variant="subtitle1" color="secondary">
+                "Experience Together"
+              </Typography>
+            </Box>
+          </Paper>
+
+          {/* CREATIVE IN SEOUL */}
+          <Paper
+            sx={{
+              p: 3,
+              width: "100%",
+              backgroundColor: "#1A2027",
+            }}
+          >
+            <Box className="iframe-container-16_9">
               <iframe
-                width="100%"
-                height="275"
-                src="https://www.youtube-nocookie.com/embed/-C-2AqRD8io"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://player.vimeo.com/video/587438230?h=0c2a1ed5e3"
+                className="responsive-iframe"
                 allowfullscreen
+                frameBorder="0"
               ></iframe>
-            </Paper>
-          </Grid>
-        </Grid>
+            </Box>
+            <Box sx={{ pt: 2 }}>
+              <Typography variant="h6">
+                What It’s Like To Be A Creative In Seoul
+              </Typography>
+              <Typography variant="subtitle1" color="secondary">
+                Documentary
+              </Typography>
+            </Box>
+          </Paper>
+
+          {/* ATOMS */}
+          <Paper
+            sx={{
+              p: 3,
+              width: "100%",
+              backgroundColor: "#1A2027",
+            }}
+          >
+            <Box className="iframe-container-16_9">
+              <iframe
+                src="https://player.vimeo.com/video/732745448?h=cd9e1f88c1"
+                className="responsive-iframe"
+                allowfullscreen
+                frameBorder="0"
+              ></iframe>
+            </Box>
+            <Box sx={{ pt: 2 }}>
+              <Typography variant="h6">Atoms</Typography>
+              <Typography variant="subtitle1" color="secondary">
+                "Summer 2022"
+              </Typography>
+            </Box>
+          </Paper>
+
+          {/* UNDER ARMOUR */}
+          <Paper
+            sx={{
+              p: 3,
+              width: "100%",
+              backgroundColor: "#1A2027",
+            }}
+          >
+            <Box className="iframe-container-267_1">
+              <iframe
+                src="https://player.vimeo.com/video/479565314?h=70d4b4afdc"
+                allowfullscreen
+                className="responsive-iframe"
+                frameBorder="0"
+              ></iframe>
+            </Box>
+            <Box sx={{ pt: 2 }}>
+              <Typography variant="h6">Under Armour</Typography>
+              <Typography variant="subtitle1" color="secondary">
+                "Dial In"
+              </Typography>
+            </Box>
+          </Paper>
+
+          {/* YOU */}
+          <Paper sx={{ backgroundColor: "#1A2027", width: "100%" }}>
+            <Grid
+              container
+              spacing={0}
+              direction="column"
+              alignItems="center"
+              justifyContent="center"
+              style={{ minHeight: "250px" }}
+            >
+              <Grid item xs={3} alignItems="center">
+                <Stack direction="column" alignItems="center" gap={3}>
+                  <AddAPhotoOutlinedIcon fontSize="large" />
+                  <Typography variant="subtitle1" color="secondary">
+                    Your next work here...
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    to="/Contact"
+                    component={RouterLink}
+                  >
+                    Book a Call
+                  </Button>
+                </Stack>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Masonry>
       </Box>
     </Box>
   );

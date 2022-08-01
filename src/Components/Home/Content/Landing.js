@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 import ReactPlayer from "react-player";
 
-import Reel from "./Assets/Reel.mp4";
+import Reel from "./Assets/REEL-COMPRESSED.mp4";
 
 export default function Landing() {
   return (
