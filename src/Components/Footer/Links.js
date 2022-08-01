@@ -5,22 +5,18 @@ import Typography from "@mui/material/Typography";
 
 import { Link as RouterLink } from "react-router-dom";
 
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-
 export default function Topbar() {
   return (
     <div>
       {/* SHOW ONLY ON BIGGER SCREENS */}
-      <Box sx={{ display: { xs: "none", sm: "block" } }}>
+      <Box>
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "left",
           }}
         >
-          <Box sx={{ mr: 6 }}>
+          <Box sx={{ mr: { xs: 0, sm: 6 } }}>
             <Link
               component={RouterLink}
               to="/"
@@ -30,7 +26,7 @@ export default function Topbar() {
               <Typography variant="subtitle1">Home</Typography>
             </Link>
           </Box>
-          <Box sx={{ mr: 6 }}>
+          <Box sx={{ mr: { xs: 0, sm: 6 } }}>
             <Link
               component={RouterLink}
               to="/About"
@@ -40,7 +36,7 @@ export default function Topbar() {
               <Typography variant="subtitle1">About</Typography>
             </Link>
           </Box>
-          <Box sx={{ mr: 6 }}>
+          <Box sx={{ mr: { xs: 0, sm: 6 } }}>
             <Link
               component={RouterLink}
               to="/Work"
@@ -61,13 +57,6 @@ export default function Topbar() {
             </Link>
           </Box>
         </Box>
-      </Box>
-
-      {/* SHOW ONLY ON MOBILE SCREENS */}
-      <Box sx={{ display: { xs: "block", sm: "none" } }}>
-        <IconButton aria-label="menu">
-          <MenuIcon />
-        </IconButton>
       </Box>
     </div>
   );

@@ -3,6 +3,10 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+import ReactPlayer from "react-player";
+
+import Reel from "./Assets/Reel.mp4";
+
 export default function Landing() {
   return (
     <Box>
@@ -31,20 +35,36 @@ export default function Landing() {
             sx={{ mt: 5 }}
           >
             <Button variant="contained">Book a Call</Button>
-            <Button variant="filled">See Our Work</Button>
+            <Button
+              variant="filled"
+              onClick={() => {
+                const titleElement = document.getElementById("work");
+                titleElement.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              See Our Work
+            </Button>
           </Stack>
         </Box>
         {/* REEL */}
         <Box sx={{ width: { xs: "100%", sm: "60%" } }}>
-          <iframe
+          <ReactPlayer
+            url={Reel}
             width="100%"
             height="375"
-            src="https://www.youtube-nocookie.com/embed/izHyKdrSKvo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            controls={true}
+            playing={true}
+            loop={true}
+            volume={0}
+            config={{
+              file: {
+                attributes: {
+                  controlslist: "nodownload noremoteplayback",
+                  disablepictureinpicture: "true",
+                },
+              },
+            }}
+          />
         </Box>
       </Stack>
     </Box>

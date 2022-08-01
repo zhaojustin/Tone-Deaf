@@ -1,30 +1,54 @@
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import { Link as RouterLink } from "react-router-dom";
 
 import Links from "./Links";
+import Socials from "./Socials";
+import SocialsMobile from "./SocialsMobile";
 
 export default function Footer() {
   return (
-    <Box sx={{ mt: 20 }}>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+    <Box sx={{ mt: { xs: 10, sm: 20 } }}>
+      <Grid container>
         {/* LINKS */}
-        <Links />
+        <Grid item xs={12} sm={4}>
+          <Links />
+        </Grid>
         {/* LOGO */}
-        <Box>
-          <Link component={RouterLink} to="/" color="inherit" underline="none">
-            <Typography variant="logo">Tonedeaf</Typography>
-          </Link>
-        </Box>
+        <Grid
+          item
+          container
+          xs={12}
+          sm={4}
+          justifyContent="center"
+          display="flex"
+        >
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Link
+              component={RouterLink}
+              to="/"
+              color="inherit"
+              underline="none"
+            >
+              <Typography variant="logo">Tonedeaf</Typography>
+            </Link>
+          </Box>
+        </Grid>
         {/* SOCIALS */}
-        <Box>
-          <Typography>@tonedeaf</Typography>
-          <Typography>@tonedeaf</Typography>
-          <Typography>@tonedeaf</Typography>
-        </Box>
-      </Box>
+        <Grid item xs={12} sm={4}>
+          <Box>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Socials />
+            </Box>
+            <Box sx={{ display: { xs: "block", sm: "none" } }}>
+              <SocialsMobile />
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
