@@ -64,7 +64,7 @@ export default function Links() {
                 titleElement.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <Typography variant="subtitle1">Works</Typography>
+              <Typography variant="subtitle1">Work</Typography>
             </Link>
           </Box>
           {/* About */}
@@ -115,19 +115,6 @@ export default function Links() {
             <ListItem sx={{ pt: 2 }}>
               <Link
                 component={RouterLink}
-                to="/About"
-                color="inherit"
-                underline="none"
-                onClick={() => {
-                  setDrawer(false);
-                }}
-              >
-                <Typography variant="subtitle1">About</Typography>
-              </Link>
-            </ListItem>
-            <ListItem sx={{ pt: 2 }}>
-              <Link
-                component={RouterLink}
                 to="/"
                 color="inherit"
                 underline="none"
@@ -137,7 +124,20 @@ export default function Links() {
                   titleElement.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <Typography variant="subtitle1">Works</Typography>
+                <Typography variant="subtitle1">Work</Typography>
+              </Link>
+            </ListItem>
+            <ListItem sx={{ pt: 2 }}>
+              <Link
+                component={RouterLink}
+                to="/About"
+                color="inherit"
+                underline="none"
+                onClick={() => {
+                  setDrawer(false);
+                }}
+              >
+                <Typography variant="subtitle1">About</Typography>
               </Link>
             </ListItem>
             <ListItem sx={{ pt: 2 }}>

@@ -12,7 +12,7 @@ export default function Topbar() {
       {/* LOGO */}
       <Box>
         <Link component={RouterLink} to="/" color="inherit" underline="none">
-          <Typography variant="logo">Tonedeaf</Typography>
+          <Typography variant="logo">heyB.</Typography>
         </Link>
       </Box>
 

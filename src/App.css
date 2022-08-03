@@ -2,3 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 
+@font-face {
+    font-family: GillSans;
+    src: url("./Util/fonts/GillSans-SemiBold.ttf");
+    format: ("ttf");
+    font-display: swap;
+  }

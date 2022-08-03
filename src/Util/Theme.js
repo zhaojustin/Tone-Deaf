@@ -15,9 +15,9 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Overpass Mono",
+    fontFamily: ['"Overpass Mono"', "GillSans", "Roboto"].join(","),
     logo: {
-      fontFamily: "Unica One",
+      fontFamily: "GillSans",
       fontSize: 25,
     },
   },
@@ -28,4 +28,5 @@ export const theme = createTheme({
       },
     },
   },
+  overrides: {},
 });

@@ -33,7 +33,7 @@ export default function Footer() {
               color="inherit"
               underline="none"
             >
-              <Typography variant="logo">Tonedeaf</Typography>
+              <Typography variant="logo">heyB.</Typography>
             </Link>
           </Box>
         </Grid>

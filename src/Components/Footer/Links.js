@@ -39,7 +39,7 @@ export default function Topbar() {
           <Box sx={{ mr: { xs: 0, sm: 6 } }}>
             <Link
               component={RouterLink}
-              to="/Work"
+              to="/"
               color="inherit"
               underline="none"
             >

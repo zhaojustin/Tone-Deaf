@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 import ReactPlayer from "react-player";
+import { Link as RouterLink } from "react-router-dom";
 
 import Reel from "./Assets/REEL-COMPRESSED.mp4";
 
@@ -17,24 +18,44 @@ export default function Landing() {
       >
         {/* LEFT BOX */}
         <Box sx={{ width: { xs: "100%", sm: "40%" } }}>
-          <Typography variant="h3">
-            <strong>Dummy</strong> Text Header
+          <Typography
+            variant="h3"
+            sx={{ display: { xs: "none", sm: "block" } }}
+          >
+            <strong>Rethink</strong> Creative Advertising
           </Typography>
-          <Typography sx={{ mt: 3 }} variant="h5">
-            Some subtitle here
+          {/* MOBILE ONLY */}
+          <Typography
+            variant="h4"
+            sx={{ display: { xs: "block", sm: "none" } }}
+          >
+            <strong>Rethink</strong> Creative Advertising
+          </Typography>
+          <Typography
+            sx={{ mt: 3, display: { xs: "none", sm: "block" } }}
+            variant="h5"
+          >
+            Tech, Fashion, Lifestyle.
+          </Typography>
+          {/* MOBILE ONLY */}
+          <Typography
+            variant="h5"
+            sx={{ mt: 3, display: { xs: "block", sm: "none" } }}
+          >
+            Tech, Fashion, Lifestyle.
           </Typography>
           <Typography sx={{ mt: 3 }} variant="subtitle1" color="secondary">
-            More subtitle text can be placed here
-          </Typography>
-          <Typography variant="subtitle1" color="secondary">
-            Even more subtitle text can be placed here
+            Whether you’re a team of one, a growing startup, or a Fortune 500
+            company—we have flexible solutions to market your brand.
           </Typography>
           <Stack
             direction="row"
             spacing={{ xs: 1, sm: 2, md: 4 }}
             sx={{ mt: 5 }}
           >
-            <Button variant="contained">Book a Call</Button>
+            <Button variant="contained" component={RouterLink} to="/Contact">
+              Book a Call
+            </Button>
             <Button
               variant="filled"
               onClick={() => {
