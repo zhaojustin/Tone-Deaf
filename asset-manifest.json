@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Tone-Deaf/static/css/main.57b7524b.css",
-    "main.js": "/Tone-Deaf/static/js/main.e1687858.js",
+    "main.css": "/Tone-Deaf/static/css/main.9ecbcc96.css",
+    "main.js": "/Tone-Deaf/static/js/main.525e11c2.js",
     "static/js/787.41764f5f.chunk.js": "/Tone-Deaf/static/js/787.41764f5f.chunk.js",
     "static/media/REEL-COMPRESSED.mp4": "/Tone-Deaf/static/media/REEL-COMPRESSED.f3434ebf0b09c961ce46.mp4",
     "static/media/moshed.jpg": "/Tone-Deaf/static/media/moshed.b69223a0e4736d81a467.jpg",
+    "static/media/GillSans-SemiBold.ttf": "/Tone-Deaf/static/media/GillSans-SemiBold.64e838dd8a12d59c3c29.ttf",
     "index.html": "/Tone-Deaf/index.html",
-    "main.57b7524b.css.map": "/Tone-Deaf/static/css/main.57b7524b.css.map",
-    "main.e1687858.js.map": "/Tone-Deaf/static/js/main.e1687858.js.map",
+    "main.9ecbcc96.css.map": "/Tone-Deaf/static/css/main.9ecbcc96.css.map",
+    "main.525e11c2.js.map": "/Tone-Deaf/static/js/main.525e11c2.js.map",
     "787.41764f5f.chunk.js.map": "/Tone-Deaf/static/js/787.41764f5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57b7524b.css",
-    "static/js/main.e1687858.js"
+    "static/css/main.9ecbcc96.css",
+    "static/js/main.525e11c2.js"
   ]
 }
